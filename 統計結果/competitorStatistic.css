@@ -1,0 +1,101 @@
+.nav{
+    justify-content: left;
+}
+.nav-item{
+    color:black;
+}
+
+.tableDiv{
+    width:700px;
+    margin-right: auto;
+    margin-left: auto;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.tableDiv .table th{
+    color:black;
+    text-align: center;
+    vertical-align:middle;	
+    border-top: none;
+    border-bottom:2px solid gray;
+}
+
+.tableDiv .table td{
+    color:black;
+    text-align: center;
+    vertical-align:middle;	
+}
+
+.tableDiv .table a{
+    color:blue;
+}
+
+.rank{
+    background: rgb(255, 255, 255);
+    border:none;
+    line-height: 5px;
+}
+
+.rank:hover{
+    cursor: pointer;
+}
+
+.rank:focus{
+    cursor: pointer;
+    outline:none;
+}
+
+.rankInfo{
+	width:700px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.rankInfo .nav a{
+	border:none;
+	margin-right: 20px;
+}
+
+.rankInfo .nav a:focus{
+	border:none;
+	border-bottom:1.5px solid gray;
+}
+.hotelName{
+	text-align: center;
+	font-size: 30px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+.tab-content{
+	width:700px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+}
+.tab-content p{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.scoreDiv{
+	float:right;
+	margin-top: -30px;
+	padding-left: 10px;
+}
+
+.scoreDiv img{
+	width:350px;
+	height:80px;
+	float:right;
+}
+
+.scoreDiv .p{
+	width:150px;
+	font-size: 20px;
+	margin-bottom: -10px;
+	text-align: center;
+}
+.commentabout{
+	margin-left: 30px;
+}

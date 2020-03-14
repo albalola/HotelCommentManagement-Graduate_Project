@@ -1,0 +1,44 @@
+
+.content .modify{
+	width:600px;
+    margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+}
+
+.content .modify .input-group{
+	width:250px;
+	float:left;
+	margin-top: 15px;
+}
+
+#depLeft{
+	margin-right: 70px;
+}
+
+#dep{
+	width:570px;
+}
+
+.confirm{
+	width:70px;
+	color:#FFF;
+	text-decoration:none;
+	border-radius:3px;
+	background:#757575;
+	text-align:center;
+	padding:4px;
+	margin-top: 20px;
+	margin-left: 200px;
+}
+
+.confirm:active{
+    transform: translateX(3px);
+    transition: 0.5s;
+}
+
+#cancle{
+	margin-left: 50px;
+	margin-right: 30px;
+}
+

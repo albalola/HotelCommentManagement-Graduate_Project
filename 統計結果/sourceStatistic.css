@@ -1,0 +1,71 @@
+
+.choose{
+    width:150px;
+    float:right;
+}
+
+.choose a{
+    margin-right: 30px;
+    padding-bottom: 2px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    color:black;
+}
+.choose a:hover{
+    text-decoration: none;
+    color:rgb(73, 73, 73);
+    border-bottom: 1px solid rgb(73, 73, 73);
+}
+.nav{
+    justify-content: left;
+}
+.nav-item{
+    color:black;
+}
+.tab-content{
+    border:1px solid rgb(211, 211, 211);
+    border-radius: 2px;
+    border-top: 1px solid rgba(255, 255, 255, 0.767);
+}
+.statisticContent{
+    width:800px;
+    /* margin-top: 70px; */
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+}
+.last{
+    margin-top: 50px;
+    margin-bottom: -40px;
+    margin-left: 80px;
+    justify-content: center;
+}
+.pie{
+    float: right;
+    margin-top: -200px;
+    margin-right: -20px;
+} 
+.piecontent{
+    width:700px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.piecontent span{
+    width:50px;
+    color:white;
+}
+.footer{
+    position: relative;
+}
+
+.statisticContent h4{
+    color:black;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.statisticContent p{
+    color:gray;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}

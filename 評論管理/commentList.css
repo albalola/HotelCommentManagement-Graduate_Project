@@ -1,0 +1,212 @@
+
+.tableDiv{
+    width:850px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.tableDiv .table th{
+    color:black;
+    text-align: center;
+    vertical-align:middle;	
+    border-top: none;
+    border-bottom:2px solid gray;
+}
+
+.tableDiv .table td{
+    color:black;
+    text-align: center;
+    vertical-align:middle;	
+}
+
+.searchDiv{
+    float: left;
+    width:350px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    border-bottom: 1.5px solid gray;
+}
+.searchDiv img{
+    width:20px;
+    height:20px;
+    margin-left: -40px;
+    margin-right: 20px;
+    margin-bottom: -3px;
+}
+
+.searchDiv input{
+    border: none;
+    width:250px;
+    padding-bottom: 5px;
+}
+
+.searchDiv input:focus{
+    outline: none;
+}
+
+.chooseDiv{
+    float:left;
+    width:300px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.chooseDiv p{
+    display:inline-block;
+    color:black;
+    margin-right: 30px;
+}
+.chooseDiv .tools{
+    border-bottom: 1.5px solid gray;
+    padding-bottom: 4px;
+}
+
+.chooseDiv .tools:hover{
+    cursor: pointer;
+}
+
+.chooseDiv select{
+    width:110px;
+    display:inline-block;
+    border: none;
+}
+
+.source img{
+    width:70px;
+    height:30px;
+}
+
+.tableDiv .table a{
+    color:rgb(32, 46, 240);
+}
+
+.chaWindow { 
+    display: none; 
+    position: fixed; 
+    z-index: 2; 
+    padding-top: 250px; 
+    left:0;
+    top:0; 
+    width:100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+.chaContent{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fefefe; 
+    padding: 20px; 
+    width:400px; 
+    height:300px;
+}
+
+.chaContent-header{
+    color:black;
+    font-size: 25px;
+    text-align: left;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 5px;
+}
+.chaContent p{
+    color:black;
+}
+
+.chaContent-body li{
+    list-style: none;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-align: center;
+    color:black;
+}
+
+.chaContent-footer{
+    width:200px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.chaContent-footer button{
+    width:40px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding:2px;
+}
+
+.close { 
+    color: #aaaaaa; 
+    float: right; 
+    margin-top: -45px;
+    margin-right: -5px;
+    font-size: 30px; 
+    font-weight: bold; 
+}
+
+#conditionButton{
+    padding:5px;
+    font-size: 16px;
+}
+
+.rank{
+    background: none;
+    border:none;
+    line-height: 3px;
+}
+
+.rank:hover{
+    cursor: pointer;
+}
+
+.rank:focus{
+    cursor: pointer;
+    outline:none;
+}
+
+.finishWindowID{ 
+    display: none; 
+    position: fixed; 
+    z-index: 2; 
+    padding-top: 250px; 
+    left:0;
+    top:0; 
+    width:100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+.finish{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fefefe; 
+    padding: 20px; 
+    width:400px; 
+    height:200px;
+}
+
+.finish p{
+    color:black;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+
+.finish-footer{
+    width:250px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.finish-footer button{
+    width:40px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding:2px;
+}

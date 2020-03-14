@@ -1,0 +1,65 @@
+
+.tableDiv{
+    width:850px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.tableDiv .table th{
+    color:black;
+    text-align: center;
+    vertical-align:middle;	
+    border-top: none;
+    border-bottom:2px solid gray;
+}
+
+.tableDiv .table td{
+    color:black;
+    text-align: center;
+    vertical-align:middle;	
+}
+
+.tableDiv .table a{
+    color:blue;
+}
+
+.searchDiv{
+    width:500px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1.5px solid gray;
+}
+.searchDiv img{
+    width:20px;
+    height:20px;
+    margin-right: 20px;
+    margin-bottom: -3px;
+}
+
+.searchDiv input{
+    border: none;
+    width:250px;
+    padding-bottom: 5px;
+}
+
+.searchDiv input:focus{
+    outline: none;
+}
+
+.rank{
+    background: rgb(255, 255, 255);
+    border:none;
+    line-height: 5px;
+}
+
+.rank:hover{
+    cursor: pointer;
+}
+
+.rank:focus{
+    cursor: pointer;
+    outline:none;
+}

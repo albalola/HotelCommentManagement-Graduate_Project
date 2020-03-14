@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header"></div>
+            <div class="content2">
+                <h2>忘記密碼</h2>
+                <p class="p">請輸入帳號  <input type="text" required></p>
+                <span><button type="button" class="buttonYes1" id="acbtn">確認</button></span>
+            </div>
+            <div class="c3WindowID" id="c3WindowID" style="display: none;">
+                <div class="content3 shadow">
+                    <div class="c3WindowID-body">
+                        <p>將寄送驗證碼至此信箱</p>
+                        <input type="text" disabled="true" placeholder=" j88888@gmail.com">
+                    </div>
+                    <div class="c3Content-footer">
+                        <button type="button" id="buttonYes2">確認</button>
+                    </div>
+                </div>
+            </div>
+            <div class="c3WindowID" id="c4WindowID" style="display: none;">
+                <div class="content3 shadow">
+                    <div class="c3WindowID-body">
+                        <p>請輸入收到的驗證碼</p>
+                        <input type="text">
+                    </div>
+                    <div class="c3Content-footer">
+                        <button type="button" id="buttonYes3">確認</button>
+                    </div>
+                </div>
+            </div>
+            <div class="c3WindowID" id="c5WindowID" style="display: none;">
+                <div class="content3 shadow">
+                    <div class="c3WindowID-body">
+                        <p>驗證成功！請輸入新密碼</p>
+                        <input type="text">
+                    </div>
+                    <div class="c3Content-footer">
+                        <button type="button" id="buttonYes4">確認</button>
+                    </div>
+                </div>
+            </div>
+            <div class="c3WindowID" id="c6WindowID" style="display: none;">
+                <div class="content3 shadow">
+                    <div class="c3WindowID-body">
+                        <p>請再次輸入新密碼</p>
+                        <input type="text">
+                    </div>
+                    <div class="c3Content-footer">
+                        <button type="button" id="buttonYes5">確認</button>
+                    </div>
+                </div>
+            </div>
+            <div class="c3WindowID" id="c7WindowID" style="display: none;">
+                <div class="content3 shadow">
+                    <p>驗證成功！</p>
+                    <p>畫面將跳轉至登入頁面．．．</p>
+                </div>
+            </div>
+            <div class="c3WindowID" id="c8WindowID" style="display: none;">
+                <div class="content3 shadow">
+                    <div class="c3WindowID-body">
+                        <p>驗證失敗！</p>
+                        <p>點按以重新發放驗證碼</p>
+                    </div>
+                    <div class="c3Content-footer">
+                        <button type="button" id="buttonYes6">重新發放驗證碼</button>
+                    </div>
+                </div>
+            </div>
+    </div>  
+    <script>
+        var vc = document.getElementById('c3WindowID'); 
+        var vcinput = document.getElementById('c4WindowID'); 	 	
+        var newpass=document.getElementById('c5WindowID') ;
+        var passagain=document.getElementById('c6WindowID') ;
+        var go=document.getElementById('c7WindowID');
+        var fail=document.getElementById('c8WindowID');
+
+        var btn = document.getElementById("acbtn"); 
+        var btn1 = document.getElementById("buttonYes2");  
+        var btn2 = document.getElementById("buttonYes3");    
+        var btn3 = document.getElementById("buttonYes4");  
+        var btn4 = document.getElementById("buttonYes5");    
+        var btn5 = document.getElementById("buttonYes6");    
+        var yes = document.getElementById("buttonYes");
+
+        var first=false;
+
+        btn.onclick = function() { 
+            vc.style.display = "block"; 
+        } 	 
+        btn1.onclick=function(){
+            vcinput.style.display="block";
+        }
+        btn2.onclick=function(){
+            if(first==true){
+                newpass.style.display="block";
+                first=false;
+            }else{
+                fail.style.display="block";
+                first=true;
+            }   
+        }
+        btn3.onclick=function(){
+            passagain.style.display="block";
+        }
+        btn4.onclick=function(){
+            go.style.display="block";
+            $(go).delay(500).hide(0);
+            setTimeout("location='../統計結果/Statistic.html'",500);
+        }
+        btn5.onclick=function(){
+            $(fail).delay(200).hide(0);
+            $(vcinput).delay(500).show(0);
+        }
+
+        buttonYes.onclick=function(){
+            cha.style.display = "none"; 
+        }
+        
+    </script>
+</body>
+</html>

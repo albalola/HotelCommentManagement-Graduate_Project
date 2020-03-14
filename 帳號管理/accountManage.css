@@ -1,0 +1,63 @@
+.buttonDiv{
+    float:right;
+    margin-bottom: 15px;
+    margin-right: -20px;
+}
+.buttonDiv input{
+    display:inline-block;
+	width:100px;
+	color:#FFF;
+	text-decoration:none;
+    border-radius:3px;
+	background:#757575;
+	text-align:center;
+	padding:4px;
+	margin-right: 20px;
+}
+
+.buttonDiv input:active{
+    transform: translateX(3px);
+    transition: 0.5s;
+}
+
+.tableDiv{
+    width:880px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.table{
+    width:880px;
+    text-align: center;
+}
+.table th{
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align:middle;	
+}
+.table td{
+    width:100px;
+    padding:15px;
+    color:black;
+    vertical-align:middle;	
+}
+.table a{
+    color:black;
+}
+
+.table .deleteUser{
+    all:unset;
+    display:none;
+    width:50px;
+    height:10px;
+    background: rgb(255, 255, 255);
+    color:black;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+.deleteUser .deleteimg{
+    width:30px;
+    height:32px;
+    margin-top: -7px;
+}

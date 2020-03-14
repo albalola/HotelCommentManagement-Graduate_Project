@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../all.css">
+    <link rel="stylesheet" href="competitorStatistic.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="head">
+      <div class="left">
+          <h1>旅館評論系統</h1>
+      </div>
+      <div class="center">
+      <ul class="list">
+          <li class="menu"><a href="../帳號管理/accountManage.html">帳號管理</a></li>
+          <li class="menu"><a href="../評論管理/commentList.html">消息管理</a></li>
+          <li class="menu"><a href="../統計結果/Statistic.html">統計結果</a></li>
+          <li class="menu"><a href="../競爭對手/competitor.html">競爭對手</a></li>
+          <li class="menu"><a href="../歷史紀錄/history.html">歷史紀錄</a></li>
+      </ul>
+      </div>
+      <div class="right">
+          <span>後臺管理員</span>
+          <div class="photo">
+              <button type="button" class="photo" data-container='body' data-toggle="popover" data-placement="bottom" data-html="true" data-content='
+                  <div id="showInfo" class="showInfo" style="display: none">
+                  <div class="showInfoPhoto"><img src="eye.png"></div>
+                  <p></p>
+                  <p>j88888@gmail.com</p>
+                  <p><a href="../帳號管理/accountManageModify.html">修改個人資料</a></p>
+                  <P><a href="../登入/login.html">登出</a></P>
+              </div>'><img src="eye.png"></button>
+              <div class="clear"></div>
+          </div>
+          <div class="title">
+              <p>公司名稱</p>
+              <a href="../帳號管理/accountManageDetail.html#content">名字</a>
+          </div>
+      </div>
+      <div class="clear"></div>
+  </div>
+  <div class="content">
+      <div class="item">
+          <img src="search.png">
+          <h2>統計結果</h2>
+          <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+      <nav class="rankInfo">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">整體</a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">依地區</a>
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">依時間</a>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="accordingResult">
+                <p class="hotelName">香格里拉高雄遠東大飯店</p>
+                <p>您的整體排名為：2</p>
+                <p>整體平均：4.3</p>
+                <div class="scoreDiv">
+                    <p class="p">您的分數：4.6</p>
+                    <p><img src="scorelineall.png"></p>
+                    <div class="clear"></div>
+                </div>
+                <p>相關評論：</p>
+                <div class="commentabout">
+                    <p>客房：17%（共170則）</p>
+                    <p>服務：50%（共600則）</p>
+                    <p>設備：25%（共300則）</p>
+                    <p>交通：5%（共50則）</p>
+                    <p>（依照整體相關評論比例）</p>
+                </div>
+                <div class="tableDiv">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">  地區<button class="rank">v</button></th>
+                            <th scope="col">飯店業者</th>
+                            <th scope="col">  評分<button class="rank">v</button></th>
+                            <th scope="col">排名</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="zone">台北</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">香格里拉台北遠東大飯店</a></td>
+                            <td class="score">★4.7</td>
+                            <td class="ranking">1</td>
+                          </tr>
+                          <tr  style="background: rgb(197, 197, 197);">
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../評論管理/commentList.html">香格里拉高雄遠東大飯店</a></td>
+                            <td class="score">★4.6</td>
+                            <td class="ranking">2</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">台東</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">台東飯店</a></td>
+                            <td class="score">★4.3</td>
+                            <td class="ranking">3</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">新北</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">圓山飯店</a></td>
+                            <td class="score">★4.2</td>
+                            <td class="ranking">4</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">西子灣飯店</a></td>
+                            <td class="score">★4.1</td>
+                            <td class="ranking">5</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">台南</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">豬油拌飯大飯店</a></td>
+                            <td class="score">★4.0</td>
+                            <td class="ranking">6</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="tab-pane " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="accordingResult">
+                <p class="hotelName">香格里拉高雄遠東大飯店</p>
+                <p>您的排名在高雄地區中為：2</p>
+                <p>整體平均：4.25</p>
+                <div class="scoreDiv">
+                    <p class="p">您的分數：4.4</p>
+                    <p><img src="scoreline.png"></p>
+                    <div class="clear"></div>
+                </div>
+                <p>相關評論：</p>
+                <div class="commentabout">
+                    <p>客房：10%（共100則）</p>
+                    <p>服務：30%（共300則）</p>
+                    <p>設備：20%（共200則）</p>
+                    <p>交通：5%（共50則）</p>
+                    <p>（依照高雄地區飯店相關評論比例）</p>
+                </div>
+                <div class="tableDiv">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">  地區<button class="rank">v</button></th>
+                            <th scope="col">飯店業者</th>
+                            <th scope="col">  評分<button class="rank">v</button></th>
+                            <th scope="col">排名</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">高雄大飯店</a></td>
+                            <td class="score">★4.5</td>
+                            <td class="ranking">1</td>
+                          </tr>
+                          <tr  style="background: rgb(197, 197, 197);">
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../評論管理/commentList.html">香格里拉高雄遠東大飯店</a></td>
+                            <td class="score">★4.4</td>
+                            <td class="ranking">2</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">高雄火車站飯店</a></td>
+                            <td class="score">★4.3</td>
+                            <td class="ranking">3</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">實踐飯店</a></td>
+                            <td class="score">★4.2</td>
+                            <td class="ranking">4</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">西子灣飯店</a></td>
+                            <td class="score">★4.1</td>
+                            <td class="ranking">5</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">台南</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">豬油拌飯大飯店</a></td>
+                            <td class="score">★4.0</td>
+                            <td class="ranking">6</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">哈囉大飯店</a></td>
+                            <td class="score">★4.0</td>
+                            <td class="ranking">6</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="accordingResult">
+                <p class="hotelName">香格里拉高雄遠東大飯店</p>
+                <p>您的本月排名在所有飯店中：3</p>
+                <p>整體平均：4.4</p>
+                <div class="scoreDiv">
+                    <p class="p">您的分數：4.3</p>
+                    <p><img src="scorelinemonth.png"></p>
+                    <div class="clear"></div>
+                </div>
+                <p>相關評論：</p>
+                <div class="commentabout">
+                    <p>客房：10%（共100則）</p>
+                    <p>服務：30%（共300則）</p>
+                    <p>設備：20%（共200則）</p>
+                    <p>交通：5%（共50則）</p>
+                    <p>（依照該月相關評論比例）</p>
+                </div>
+                <div class="tableDiv">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">  地區<button class="rank">v</button></th>
+                            <th scope="col">飯店業者</th>
+                            <th scope="col">  評分<button class="rank">v</button></th>
+                            <th scope="col">排名</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">高雄大飯店</a></td>
+                            <td class="score">★4.5</td>
+                            <td class="ranking">1</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">高雄火車站飯店</a></td>
+                            <td class="score">★4.4</td>
+                            <td class="ranking">2</td>
+                          </tr>
+                          <tr   style="background: rgb(197, 197, 197);">
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../評論管理/commentList.html">香格里拉高雄遠東大飯店</a></td>
+                            <td class="score">★4.3</td>
+                            <td class="ranking">3</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">台東</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">台東飯店</a></td>
+                            <td class="score">★4.3</td>
+                            <td class="ranking">3</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">新北</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">圓山飯店</a></td>
+                            <td class="score">★4.2</td>
+                            <td class="ranking">4</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">實踐飯店</a></td>
+                            <td class="score">★4.2</td>
+                            <td class="ranking">4</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">西子灣飯店</a></td>
+                            <td class="score">★4.1</td>
+                            <td class="ranking">5</td>
+                          </tr>
+                          <tr>
+                            <td class="zone">高雄</td>
+                            <td class="comment"　style="width:50;"><a href="../競爭對手/competitorCommentList.html">哈囉大飯店</a></td>
+                            <td class="score">★4.0</td>
+                            <td class="ranking">6</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="footer">
+      <ul class="leftFooter">
+          <li><a href="#">聯絡我們</a></li>
+          <li><a href="#">品牌資訊</a></li>
+          <li><a href="#">品牌日誌</a></li>
+          <li><a href="#">合作商家</a></li>
+      </ul>
+      <ul class="rightFooter">
+          <li>@ 2020 HOTEL COMMENT MANAGEMENT</li>
+          <li><a href="#">免責聲明</a></li>
+          <li><a href="#">隱私權政策</a></li>
+          <li><a href="#">網站使用條款</a></li>
+      </ul>
+      <div class="clear"></div>
+  </div>
+  <script>
+      $(document).ready(function(){
+          $('.photo').popover({
+              html: true,
+              placement: 'bottom',
+              content:function() {
+                  return $('#showInfo').show();
+              }    
+          });
+      });
+  </script>
+</body>
+</html>

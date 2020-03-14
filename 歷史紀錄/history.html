@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <div class="left">
+            <h1>旅館評論系統</h1>
+        </div>
+        <div class="center">
+        <ul class="list">
+            <li class="menu"><a href="../帳號管理/accountManage.html">帳號管理</a></li>
+            <li class="menu"><a href="../評論管理/commentList.html">消息管理</a></li>
+            <li class="menu"><a href="../統計結果/Statistic.html">統計結果</a></li>
+            <li class="menu"><a href="../競爭對手/competitor.html">競爭對手</a></li>
+            <li class="menu"><a href="../歷史紀錄/history.html">歷史紀錄</a></li>
+        </ul>
+        </div>
+        <div class="right">
+            <span>後臺管理員</span>
+            <div class="photo">
+                <button type="button" class="photo" data-container='body' data-toggle="popover" data-placement="bottom" data-html="true" data-content='
+                    <div id="showInfo" class="showInfo" style="display: none">
+                    <div class="showInfoPhoto"><img src="eye.png"></div>
+                    <p></p>
+                    <p>j88888@gmail.com</p>
+                    <p><a href="../帳號管理/accountManageModify.html">修改個人資料</a></p>
+                    <P><a href="../登入/login.html">登出</a></P>
+                </div>'><img src="eye.png"></button>
+                <div class="clear"></div>
+            </div>
+            <div class="title">
+                <p>公司名稱</p>
+                <a href="../帳號管理/accountManageDetail.html#content">名字</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="content">
+        <div class="item">
+            <img src="search.png">
+            <h2>歷史紀錄</h2>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+        <ul class="leftFooter">
+            <li><a href="#">聯絡我們</a></li>
+            <li><a href="#">品牌資訊</a></li>
+            <li><a href="#">品牌日誌</a></li>
+            <li><a href="#">合作商家</a></li>
+        </ul>
+        <ul class="rightFooter">
+            <li>@ 2020 HOTEL COMMENT MANAGEMENT</li>
+            <li><a href="#">免責聲明</a></li>
+            <li><a href="#">隱私權政策</a></li>
+            <li><a href="#">網站使用條款</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <style>
+        html,body{
+            position: relative;
+        }
+        .footer{
+            position: absolute;
+            width:100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.photo').popover({
+                html: true,
+                placement: 'bottom',
+                content:function() {
+                    return $('#showInfo').show();
+                }    
+            });
+        });
+    </script>
+</body>
+</html>

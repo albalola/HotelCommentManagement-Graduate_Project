@@ -1,0 +1,247 @@
+
+
+.buttonDiv{
+    float:right;
+    margin-top: 5px;
+    margin-right: 55px;
+}
+.buttonDiv input{
+    display:inline-block;
+	width:100px;
+	color:#FFF;
+	text-decoration:none;
+	border-radius:3px;
+	background:#757575;
+	text-align:center;
+	padding:4px;
+	margin-right: 20px;
+}
+
+.buttonDiv input:active{
+    transform: translateX(3px);
+    transition: 0.5s;
+}
+
+.delWindow { 
+    display: none; 
+    position: fixed; 
+    z-index: 2; 
+    padding-top: 250px; 
+    left:0;
+    top:0; 
+    width:100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+.delContent{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fefefe; 
+    padding: 20px; 
+    width:400px; 
+    height:220px;
+}
+
+.delContent-header{
+    color:black;
+    font-size: 25px;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 2px;
+}
+.delContent p{
+    color:black;
+}
+.delContent-body p{
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-align: center;
+}
+.delContent-footer{
+    width:200px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.delContent-footer button{
+    width:40px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding:2px;
+	background:#b1b1b1;
+}
+
+#delYes{
+    display: none;
+    position: fixed; 
+    z-index: 2; 
+    padding-top: 250px; 
+    left:0;
+    top:0; 
+    width:100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #b1b1b1; 
+}
+#delYes p{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 70px;
+}
+.close { 
+    color: #aaaaaa; 
+    float: right; 
+    margin-top: -55px;
+    margin-right: -5px;
+    font-size: 30px; 
+    font-weight: bold; 
+}
+.DetailsDiv{
+    width:850px;
+    height:400px;
+    color:black;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    background:white;
+    box-shadow: inset -1px -1px rgba(143, 143, 143, 0.3);
+    border: 0.5px solid rgb(160, 160, 160);
+}
+
+.headDep p{
+    text-align: right;
+    color: black;
+    margin-right: 20px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-decoration: underline;
+}
+.DetailsLeft{
+    float:left;
+    margin-top: 20px;
+    margin-left: 90px;
+    color:black;
+}
+
+.DetailsLeft p{
+    width:250px;
+    text-align: center;
+    color:black;
+    margin-top: 15px;
+}
+
+.DetailsRight{
+    float: left;
+    height:320px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-top: 70px;
+    padding-left: 50px;
+    border-left:2px solid black;
+}
+
+.DetailsRight p{
+    color:black;
+    font-size: 18px;
+}
+
+.DetailsRight span{
+    color:black;
+    font-size: 18px;
+}
+
+.space{
+    margin-top: 50px;
+}
+
+#yourphoto{
+    width: 250px;
+    height: 250px;
+}
+#yourphoto:hover{
+    cursor: pointer;
+}
+
+.imgWindow { 
+    display: none; 
+    position: fixed; 
+    z-index: 2; 
+    padding-top: 250px; 
+    left:0;
+    top:0; 
+    width:100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+.imgContent{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fefefe; 
+    padding: 20px; 
+    width:400px; 
+    height:250px;
+}
+
+.imgContent-header{
+    color:black;
+    font-size: 25px;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 5px;
+}
+.imgContent p{
+    color:black;
+}
+
+.imgContent-body{
+    margin-top: 40px;
+}
+
+.close1 { 
+    color: #aaaaaa; 
+    float: right; 
+    margin-top: -55px;
+    margin-right: -5px;
+    font-size: 30px; 
+    font-weight: bold; 
+}
+.close1:hover{
+    cursor:pointer;
+}
+
+.imgContent-footer{
+    width:200px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.imgContent-footer button{
+    width:40px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding:2px;
+
+}
+
+.pagination{
+    width:500px;
+    margin-top: 10px;
+    margin-left: 360px;
+}
+
+.pagination .page-item{
+    width:100px;
+    text-align: center;
+    margin-right: 100px;
+    padding:10px 5px 10px 5px;
+    color:black;
+}
+
+.pagination .page-item a{
+    color:black;
+    text-decoration: underline;
+}

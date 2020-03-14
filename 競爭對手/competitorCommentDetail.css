@@ -1,0 +1,139 @@
+
+.commentContent{
+    width:820px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+
+}
+
+.comment-header p{
+    display: inline-block;
+    margin-left: 15px;
+}
+.comment-header{
+    width:820px;
+    text-align: right;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    border-bottom: 1.5px solid rgb(139, 139, 139);
+}
+
+.comment-label{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.comment-label span{
+    padding: 2px;
+    margin-right: -10px;
+}
+
+.comment-label .service{
+    display: inline-block;
+    vertical-align: top;
+    width:60px;
+    font-size: 16px;
+    margin-top: 3.5px;
+}
+
+.comment-label .label{
+    background: none;
+    line-height: 27px;
+    margin-right: 5px;
+ }
+
+.score{
+    margin-left: 370px;
+ }
+
+.comment-content{
+    margin-top: 20px;
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+.comment-footer{
+    margin-top: 30px;
+    background: rgb(137, 203, 214);
+}
+
+.comment-footer a{
+    color:blue;
+}
+
+.companyInfoDiv{
+    width:16.5%;
+    float: right;
+    z-index: 2;
+    margin-left: 1270px;
+    position: fixed;
+    border: 1px solid gray;
+    background: #000;
+    margin-top: 230px;
+}
+
+.companyInfoDiv img{
+    width:250px;
+    height:200px;
+}
+
+.companyInfo{
+    width:230px;
+    padding-left: 10px;
+}
+
+.companyInfo p{
+    color:white;
+    line-height: 30px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.companyInfoDiv:hover{
+    cursor: pointer;
+    background: rgb(97, 97, 97);
+}
+.companyInfoDiv a:hover{
+    text-decoration: none;
+}
+
+.footer{
+    position: relative;
+}
+
+.pagination{
+    width:500px;
+    margin-top: 20px;
+    margin-left: 330px;
+    margin-bottom: 30px;
+}
+
+.pagination .page-item{
+    width:100px;
+    text-align: center;
+    margin-right: 110px;
+    padding:10px 5px 10px 5px;
+    color:black;
+}
+
+.pagination .page-item a{
+    color:black;
+    text-decoration: underline;
+}
+
+.goback{
+    width:50px;
+    margin-left: 470px;
+    color:black;
+    border-bottom: 1.5px solid #000;
+    padding-bottom: 2px;
+}
+
+.goback:hover{
+    text-decoration: none;
+    border-bottom: 1.5px solid rgb(0, 47, 255);
+    color:blue;
+}
+

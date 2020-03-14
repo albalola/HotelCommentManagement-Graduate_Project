@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../all.css">
+    <link rel="stylesheet" href="commentListDetails.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <div class="left">
+            <h1>旅館評論系統</h1>
+        </div>
+        <div class="center">
+        <ul class="list">
+            <li class="menu"><a href="../帳號管理/accountManage.html">帳號管理</a></li>
+            <li class="menu"><a href="../評論管理/commentList.html">消息管理</a></li>
+            <li class="menu"><a href="../統計結果/Statistic.html">統計結果</a></li>
+            <li class="menu"><a href="../競爭對手/competitor.html">競爭對手</a></li>
+            <li class="menu"><a href="../歷史紀錄/history.html">歷史紀錄</a></li>
+        </ul>
+        </div>
+        <div class="right">
+            <span>後臺管理員</span>
+            <div class="photo">
+                <button type="button" class="photo" data-container='body' data-toggle="popover" data-placement="bottom" data-html="true" data-content='
+                    <div id="showInfo" class="showInfo" style="display: none">
+                    <div class="showInfoPhoto"><img src="eye.png"></div>
+                    <p></p>
+                    <p>j88888@gmail.com</p>
+                    <p><a href="../帳號管理/accountManageModify.html">修改個人資料</a></p>
+                    <P><a href="../登入/login.html">登出</a></P>
+                </div>'><img src="eye.png"></button>
+                <div class="clear"></div>
+            </div>
+            <div class="title">
+                <p>公司名稱</p>
+                <a href="../帳號管理/accountManageDetail.html#content">名字</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="content">
+        <div class="item">
+            <img src="search.png">
+            <h2>評論詳細內容</h2>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="commentContent">
+            <div class="comment-header">
+                <p>時間：2019-05-09</p>
+                <span class="condition">狀態：<input type="button" id="conditionButton" value="未處理" onclick="changeCondition()"></span>
+            </div>
+            <div class="finishWindowID" id="finishWindowID" style="display: none;">
+                <div class="finish shadow">
+                    <p>是否更改此評論狀態為已完成？</p>
+                    <div class="finish-footer">
+                        <button type="button" id="buttonYes1">確認</button>
+                        <button type="button" id="buttonNo1">取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>   
+            <div class="comment-label">
+                <span class="label">標籤：</span>
+                <span class="close">&times;<span class="service">未知</span></span>
+                <span class="close">&times;<span class="service">隔音</span></span>
+                <span class="close">&times;<span class="service">交通</span></span>
+                <span class="close">&times;<span class="service">設施</span></span>
+                <span class="close">&times;<span class="service">服務</span></span>
+                <span class="close">&times;<span class="service">客房</span></span>
+            </div>
+            <span>（</span><span class="add" id="add">修改</span><span>）</span>
+            <div class="addWindow" id="addWindowID">
+                <div class="addContent">
+                    <div class="add-header">
+                        <p>修改分類標籤</p>
+                        <span class="close" id="close2">&times;</span>
+                    </div>
+                    <div class="add-body">
+                        <li><input type="checkbox" checked="checked">客房</li>
+                        <li><input type="checkbox" checked="checked">服務</li>
+                        <li><input type="checkbox" checked="checked">設施</li>
+                        <li><input type="checkbox" checked="checked">交通</li>
+                        <li><input type="checkbox" checked="checked">隔音</li>
+                        <li><input type="checkbox" checked="checked">未知</li>
+                        <li><input type="checkbox">未知</li>
+                        <li><input type="checkbox">未知</li>
+                        <li><input type="checkbox">未知</li>
+                        <li><input type="checkbox">未知</li>
+                        <li><input type="checkbox">未知</li>
+                        <li><input type="checkbox">未知</li>
+                        <li><input type="checkbox">未知</li>
+                        <li><input type="checkbox">未知</li>
+                        <li><input type="checkbox">未知</li>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="add-footer">
+                        <button type="button" id="buttonYes">確認</button>
+                        <button type="button" id="buttonNo">取消</button>
+                    </div>
+                </div>
+            </div>
+            <span class="score">★ 4 . 5</span>
+            <div class="comment-content">
+                <p>     好友的母親出門倒垃圾，一輛急駛摩托車猛然撞擊，就此倒地不起。這位伯母原本有心臟宿疾
+                    子女完全不能接受，哭著說：「媽媽一句交代都沒就走了！」他們以為，媽媽即使心臟病發作
+                    其實，他們忘了，媽媽每天都在交代。
+                    就跟天下的母親一樣，無非是「注意身體，小心著涼」、「不要太累，少熬夜，少喝酒」
+                    、「好好念書，別整天貪玩」.....
+                    只不過我們聽得太多，聽得我們煩膩、麻木。
+                    直到母親閉口的那刻，我們才發現，還有很多話來不及聽、來不及問、來不及跟媽媽說。
+                    好友的母親出門倒垃圾，一輛急駛摩托車猛然撞擊，就此倒地不起。這位伯母原本有心臟宿疾
+                    子女完全不能接受，哭著說：「媽媽一句交代都沒就走了！」他們以為，媽媽即使心臟病發作
+                    其實，他們忘了，媽媽每天都在交代。
+                    就跟天下的母親一樣，無非是「注意身體，小心著涼」、「不要太累，少熬夜，少喝酒」
+                    、「好好念書，別整天貪玩」.....
+                    只不過我們聽得太多，聽得我們煩膩、麻木。
+                    直到母親閉口的那刻，我們才發現，還有很多話來不及聽、來不及問、來不及跟媽媽說。
+                    好友的母親出門倒垃圾，一輛急駛摩托車猛然撞擊，就此倒地不起。這位伯母原本有心臟宿疾
+                    子女完全不能接受，哭著說：「媽媽一句交代都沒就走了！」他們以為，媽媽即使心臟病發作
+                    其實，他們忘了，媽媽每天都在交代。
+                    就跟天下的母親一樣，無非是「注意身體，小心著涼」、「不要太累，少熬夜，少喝酒」
+                    、「好好念書，別整天貪玩」.....
+                    只不過我們聽得太多，聽得我們煩膩、麻木。
+                    直到母親閉口的那刻，我們才發現，還有很多話來不及聽、來不及問、來不及跟媽媽說。
+                </p>
+            </div>
+            <div class="comment-footer">
+                <p>來源：<a href="https://www.trivago.com.tw/">Trivago</a></p>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <nav class="page">
+            <ul class="pagination">
+              <li class="page-item">＜<a href="commentListDetails.html#content">Previous</a></li>
+              <li class="page-item"><a href="commentListDetails.html#content">Next</a>＞</li>
+            </ul>
+        </nav>
+        <a href="commentList.html" class="goback">回評論列表</a></li>
+    </div>
+    <div class="footer">
+        <ul class="leftFooter">
+            <li><a href="#">聯絡我們</a></li>
+            <li><a href="#">品牌資訊</a></li>
+            <li><a href="#">品牌日誌</a></li>
+            <li><a href="#">合作商家</a></li>
+        </ul>
+        <ul class="rightFooter">
+            <li>@ 2020 HOTEL COMMENT MANAGEMENT</li>
+            <li><a href="#">免責聲明</a></li>
+            <li><a href="#">隱私權政策</a></li>
+            <li><a href="#">網站使用條款</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.photo').popover({
+                html: true,
+                placement: 'bottom',
+                content:function() {
+                    return $('#showInfo').show();
+                }    
+            });
+        });
+
+        
+        var fin = document.getElementById('finishWindowID'); 	 
+        var btn1 = document.getElementById("conditionButton");  
+        var yes1 = document.getElementById("buttonYes1");
+        var no1 = document.getElementById("buttonNo1");
+        
+        $(function changeCondition(obj){
+            $("#conditionButton").click(function(e){
+                var btnVal=document.getElementById('conditionButton');
+                if(btnVal.value=="未處理"){
+                    $(this).val("處理中");
+                }else if(btnVal.value=="處理中"){
+                    fin.style.display = "block";
+                    yes1.onclick=function(){
+                        fin.style.display = "none"; 
+                        $(btnVal).css({
+                            "background-color":"#ebebeb",
+                            "color":"red",
+                            "vertical-align": "middle",
+                            "border": "1px solid #ebebeb",
+                        });
+                        $(btnVal).attr('disabled', 'disabled');
+                        $(btnVal).val("已完成");
+                    }
+                    no1.onclick=function(){
+                        fin.style.display = "none"; 
+                    }
+                }
+            });
+        });
+
+        var add = document.getElementById('addWindowID'); 	 
+        var btn = document.getElementById("add");  
+        var span = document.getElementsByClassName("close")[0];
+        var close = document.getElementById("close2");  
+        var yes = document.getElementById("buttonYes");
+        var no = document.getElementById("buttonNo");
+
+        btn.onclick = function() { 
+            add.style.display = "block"; 
+        } 	 
+        span.onclick = function() { 
+            add.style.display = "none"; 
+        }
+        close.onclick = function() { 
+            add.style.display = "none"; 
+        }
+        buttonYes.onclick=function(){
+            add.style.display = "none"; 
+        }
+        buttonNo.onclick=function(){
+            add.style.display = "none"; 
+        }
+
+
+    </script>
+</body>
+</html>
